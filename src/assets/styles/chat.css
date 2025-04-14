@@ -1,0 +1,81 @@
+.chat-container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sent message (right-aligned, blue bubble) */
+.chat-message.sent {
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 5px 0;
+  align-self: flex-end;
+  text-align: right;
+  max-width: 80%;
+}
+
+/* Received message (left-aligned, gray bubble) */
+.chat-message.received {
+  background: #e0e0e0;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 5px 0;
+  align-self: flex-start;
+  text-align: left;
+  max-width: 80%;
+}
+
+.timestamp {
+  font-size: 10px;
+  color: gray;
+  margin-top: 4px;
+  display: block;
+  text-align: right;
+}
+
+/* Input and Send Button */
+.chat-input-container {
+  display: flex;
+  padding-top: 10px;
+}
+
+.chat-input-container input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.chat-input-container button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-input-container button:hover {
+  background: #0056b3;
+}
